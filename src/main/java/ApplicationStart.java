@@ -11,7 +11,7 @@ public class ApplicationStart {
         Thread miniMarketThread = new MiniMarketThread();
 
         executor.execute(pepitoMarketThread);
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         executor.execute(miniMarketThread);
 
         executor.shutdown();
